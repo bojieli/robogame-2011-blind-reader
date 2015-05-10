@@ -1,0 +1,1 @@
+cmd_/home/boj/blind/bfb/bfb.ko := ld -r -m elf_i386 -T /usr/src/linux-headers-2.6.38-11-generic/scripts/module-common.lds --build-id  -o /home/boj/blind/bfb/bfb.ko /home/boj/blind/bfb/bfb.o /home/boj/blind/bfb/bfb.mod.o

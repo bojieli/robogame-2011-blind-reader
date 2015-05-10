@@ -1,0 +1,13 @@
+#!/bin/sh
+module=bfb
+device=blindfb
+mode="666"
+
+/sbin/insmod ./$module.ko $*||exit 1
+rm -f /dev/$device
+major=$(grep -oP "\d*(?=\s$device)" /proc/devices)
+mknod /dev/$device c $major 0
+
+group=$(grep -oP '^(staff|wheel)(?=.*)' /etc/group)
+chgrp $group /dev/${device}
+chmod $mode /dev/${device}

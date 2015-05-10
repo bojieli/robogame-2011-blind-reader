@@ -1,0 +1,6 @@
+Application object constructing.
+application connection initializing.
+trying sending pid
+writting 4 bytes data success.
+sending pid finished
+error writting 65 bytes data.

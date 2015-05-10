@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<snake>./snake</snake>
+	<barcode>./barcode</barcode>
+	<reader>./reader</reader>
+	<search>./search</search>
+	<chat>./chat</chat>
+</menu>
